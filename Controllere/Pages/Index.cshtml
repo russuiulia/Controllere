@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lucrare Controllere</h1>
+    
+  <a asp-controller="HomeHome" asp-action="Index">Controller care returnează <b>view-ul home</b></a> <br />
+  <a asp-controller="PlainText" asp-action="Index">Controller care returnează <b>text simplu</b></a> <br />
+  <a asp-controller="DateTimeNow" asp-action="Index">Controller care returnează <b>data curentă</b></a>
+</div>
